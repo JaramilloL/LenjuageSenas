@@ -1,0 +1,14 @@
+{% extends "body.html" %}<!--extendemos de la plantilla base-->
+{% block title %}contact{% endblock %}<!--titulo dinamico-->
+
+<!--contenido que se definio en body-->
+{% block content %}
+<h1>Esta es la pagina de contacto</h1>
+    <ul>
+        {% for lis in lista %}
+        <li>{{ lis }}</li>
+        {% endfor %} 
+    </ul>
+{% endblock %}
+
+    
